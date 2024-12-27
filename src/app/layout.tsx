@@ -17,10 +17,6 @@ const links: { label: string; path: string }[] = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <meta
-        httpEquiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'self' https://embedded.passkeys.foundation;"
-      />
       <body>
         <ReactQueryProvider>
           <ClusterProvider>
