@@ -17,7 +17,7 @@ export enum ClusterNetwork {
   Mainnet = 'mainnet-beta',
   Testnet = 'testnet',
   Devnet = 'devnet',
-  Custom = 'custom',
+  Custom = 'https://velvet-hw7q70-fast-mainnet.helius-rpc.com',
 }
 
 // By default, we don't configure the mainnet-beta cluster
@@ -34,6 +34,11 @@ export const defaultClusters: Cluster[] = [
     name: 'testnet',
     endpoint: clusterApiUrl('testnet'),
     network: ClusterNetwork.Testnet,
+  },
+  {
+    name: 'helius',
+    endpoint: 'https://velvet-hw7q70-fast-mainnet.helius-rpc.com',
+    network: ClusterNetwork.Mainnet,
   },
 ]
 
